@@ -2,6 +2,8 @@ package allen.demo;
 
 import org.junit.Test;
 
+import java.io.File;
+
 
 public class DemoTest {
     @Test

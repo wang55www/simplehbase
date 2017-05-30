@@ -1,5 +1,6 @@
 package allen.test;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 import org.apache.hadoop.conf.Configuration;
@@ -28,10 +29,10 @@ public class Config {
     final public static String                     SimpleHbaseCpPath      = "hdfs://hbdev-1.alipay.net:9000/corp/jar/simplehbase-1.1.jar";
     final public static String                     SimpleHbaseCpClassName = "com.alipay.cp.ext2.CommonEndpointImpl2";
 
-    final public static String                     TestHqlNodeXmlFile     = "test\\hql\\testHqlNode.xml";
-    final public static String                     HbaseSiteFile          = "test\\hbase_site";
-    final public static String                     ZkConfigFile           = "test\\zk_conf";
-    final public static String                     MyRecordXmlFile        = "test\\hql\\myRecord.xml";
+    final public static String                     TestHqlNodeXmlFile     = "test"+File.separator+"hql"+File.separator+"testHqlNode.xml";
+    final public static String                     HbaseSiteFile          = "test"+ File.separator+"hbase_site";
+    final public static String                     ZkConfigFile           = "test"+File.separator+"zk_conf";
+    final public static String                     MyRecordXmlFile        = "test"+File.separator+"hql"+File.separator+"myRecord.xml";
 
     final public static boolean                    isPerfTestOn           = false;
 
